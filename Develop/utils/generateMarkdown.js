@@ -5,8 +5,10 @@ function renderLicenseBadge(license) {
     return `![BSD license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
   } else if  (license === 'MIT') {
     return `![MIT license](https://img.shields.io/badge/License-MIT-brightgreen)`;
-  } else if (license === 'GPL') {
-    return `![GPL license](https://img.shields.io/badge/License-GPL%20v2-blue.svg)`
+  } else if (license === 'Boost') {
+    return `![Boost license](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)`
+  } else if (license === 'Mozilla'){
+    return '![Mozilla public license](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)';
   } else {
     return '';
   }
@@ -19,8 +21,10 @@ function renderLicenseLink(license) {
     return `[BSD license](https://opensource.org/licenses/BSD-3-Clause)`;
   } else if (license === 'MIT') {
     return `[MIT license](https://opensource.org/licenses/MIT)`;
-  } else if (license === 'GPL') {
-    return `[GPL license]`
+  } else if (license === 'Boost') {
+    return `[Boost license](https://www.boost.org/LICENSE_1_0.txt)`
+  } else if (license === 'Mozilla') {
+    return `[Mozilla public license](https://opensource.org/licenses/MPL-2.0)`
   } else {
     return '';
   }
@@ -30,6 +34,9 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
+  if (license === 'BSD') {
+    return
+  }
 
 }
 
