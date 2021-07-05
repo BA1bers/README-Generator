@@ -36,19 +36,30 @@ const questions = [
     {
         type: 'input',
         name: 'test',
-        message: 'what are your project tests?'
+        message: 'What are your project tests?'
     },
     {
         type: 'list',
         name: 'license',
-        message: 'Please select a license',
+        message: 'Select a license',
         choices: ['']
 
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your email address'
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Enter your GitHub username'
     },
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
+    return fs.writeFileSync
 
 }
 
