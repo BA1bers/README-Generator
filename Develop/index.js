@@ -30,13 +30,13 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'contributors',
-        message: 'contributors for your project'
+        name: 'tests',
+        message: 'What are your project tests?'
     },
     {
         type: 'input',
-        name: 'test',
-        message: 'What are your project tests?'
+        name: 'credits',
+        message: 'contributors for your project'
     },
     {
         type: 'list',
