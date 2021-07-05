@@ -7,7 +7,7 @@ function renderLicenseBadge(license) {
     return `![MIT license](https://img.shields.io/badge/License-MIT-brightgreen)`;
   } else if (license === 'Boost') {
     return `![Boost license](https://img.shields.io/badge/License-Boost%201.0-lightblue.svg)`
-  } else if (license === 'Mozilla'){
+  } else if (license === 'MPL'){
     return '![Mozilla public license](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)';
   } else {
     return '';
@@ -23,7 +23,7 @@ function renderLicenseLink(license) {
     return `[MIT license](https://opensource.org/licenses/MIT)`;
   } else if (license === 'Boost') {
     return `[Boost license](https://www.boost.org/LICENSE_1_0.txt)`
-  } else if (license === 'Mozilla') {
+  } else if (license === 'MPL') {
     return `[Mozilla public license](https://opensource.org/licenses/MPL-2.0)`
   } else {
     return '';
@@ -43,7 +43,7 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-# Table of Contents:
+  # Table of Contents:
   * [Title](#title)
   * [Purpose](#purpose)
   * [How to install](#installation)
@@ -53,6 +53,19 @@ function generateMarkdown(data) {
   * [License](#license)
   * [Email](#email)
   * [GitHub](#github)
+# Title ${data.title}
+
+# Purpose ${data.purpose}
+
+# How to install ${data.installation}
+
+# Usage ${data.usage}
+
+# Tests ${data.tests}
+
+# Credits ${data.credits}
+
+# License
 `;
 }
 
