@@ -18,7 +18,7 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'installation',
+        name: 'How to install',
         message: 'Installation instructions'
     },
     {
@@ -40,7 +40,11 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'Select a license',
-        choices: ['BSD, MIT, Boost, MPL']
+        choices: [
+        'BSD',
+        'MIT', 
+        'Boost', 
+        'MPL']
 
     },
     {

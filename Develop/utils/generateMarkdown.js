@@ -53,19 +53,30 @@ function generateMarkdown(data) {
   * [License](#license)
   * [Email](#email)
   * [GitHub](#github)
-# Title ${data.title}
+# Title 
+${data.title}
 
-# Purpose ${data.purpose}
+# Purpose 
+${data.purpose}
 
-# How to install ${data.installation}
+# How to install 
+${data.installation}
 
-# Usage ${data.usage}
+# Usage 
+${data.usage}
 
-# Tests ${data.tests}
+# Tests 
+${data.tests}
 
-# Credits ${data.credits}
+# Credits 
+${data.credits}
 
 # License
+${renderLicenseBadge(data.license)}
+
+#Email
+
+#GitHub
 `;
 }
 
