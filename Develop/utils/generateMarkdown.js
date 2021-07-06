@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license === 'BSD') {
-    return `![BSD license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)`;
+    return `![BSD license](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)`;
   } else if  (license === 'MIT') {
     return `![MIT license](https://img.shields.io/badge/License-MIT-brightgreen)`;
   } else if (license === 'Boost') {
@@ -34,14 +34,8 @@ function renderLicenseLink(license) {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if (license === 'BSD') {
-    return `This project is copyrighted under the BSD 3-Clause License`
-  } else if (license === 'MIT') {
-    return `This project is copyrighted under the MIT License`
-  } else if (license === 'Boost') {
-    return `This project is copyrighted under the 1.0 version of the Boost Software License`
-  } else if (license === 'MPL') {
-    return `This project is copyrighted under the 2.0 version of the Mozilla Public License`
+  if (license === 'BSD','MIT','Boost','MPL') {
+    return `This project is copyrighted under the `
   }
 
 }
