@@ -13,23 +13,23 @@ const questions = [
     },
     {
         type: 'input',
-        name: 'purpose',
-        message: 'type in the description of you project'
+        name: 'description',
+        message: 'Type in the description of you project'
     },
     {
         type: 'input',
-        name: 'How to install',
+        name: 'installation',
         message: 'Installation instructions'
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'Instructions on how to use yout project'
+        message: 'Instructions on how to use your project'
     },
     {
         type: 'input',
         name: 'tests',
-        message: 'What are your project tests?'
+        message: 'How do you test your project?'
     },
     {
         type: 'input',

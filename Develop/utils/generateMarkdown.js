@@ -35,7 +35,13 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license === 'BSD') {
-    return
+    return `This project is copyrighted under the BSD 3-Clause License`
+  } else if (license === 'MIT') {
+    return `This project is copyrighted under the MIT License`
+  } else if (license === 'Boost') {
+    return `This project is copyrighted under the 1.0 version of the Boost Software License`
+  } else if (license === 'MPL') {
+    return `This project is copyrighted under the 2.0 version of the Mozilla Public License`
   }
 
 }
@@ -45,7 +51,7 @@ function generateMarkdown(data) {
   return `# ${data.title}
   # Table of Contents:
   * [Title](#title)
-  * [Purpose](#purpose)
+  * [Description](#description)
   * [How to install](#installation)
   * [Usage](#usage)
   * [Tests](#tests)
@@ -56,8 +62,8 @@ function generateMarkdown(data) {
 # Title 
 ${data.title}
 
-# Purpose 
-${data.purpose}
+# Description 
+${data.description}
 
 # How to install 
 ${data.installation}
@@ -69,14 +75,18 @@ ${data.usage}
 ${data.tests}
 
 # Credits 
-${data.credits}
+Created By: ${data.credits}.
 
 # License
+${renderLicenseSection(data.license)}
 ${renderLicenseBadge(data.license)}
+${renderLicenseLink(data.license)}
 
 #Email
+Have any questions? feel free to email me at ${data.email}. 
 
 #GitHub
+Follow me on github where you can also ask me questions here at https://github.com/${data.github}.
 `;
 }
 
