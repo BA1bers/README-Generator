@@ -76,10 +76,10 @@ ${renderLicenseSection(data.license)}
 ${renderLicenseBadge(data.license)}
 ${renderLicenseLink(data.license)}
 
-#Email
+# Email
 Have any questions? feel free to email me at ${data.email}. 
 
-#GitHub
+# GitHub
 Follow me on github where you can also ask me questions here at https://github.com/${data.github}.
 `;
 }
